@@ -1,0 +1,88 @@
+/* Custom List Numbering style1*/
+ol.style1 {
+counter-reset:numbers;
+list-style:none;
+padding:0;
+}
+ol.style1 > li {
+counter-increment:numbers;
+margin-bottom:25px;
+position:relative;
+margin-left:55px;
+}
+ol.style1 > li img {
+margin:15px 0;
+width:100%;
+display:block;
+}
+ol.style1 > li #box-download img {
+margin:0;}
+ol.style1 > li::before {
+content: counter(numbers);
+line-height: 23px;
+font-family: 'Noto Sans',sans-serif;
+font-size: 14px;
+font-weight: 700;
+left: -45px;
+width: 32px;
+height: 32px;
+text-align: center;
+position: absolute;
+color: #9c27b0;
+border: 5px solid rgba(116,103,251,.17);
+border-radius: 50px;
+top: -2px;
+}
+ol.standard li, ol.style2 li, ol.style0 li, ol.style1 li ul li {
+margin-bottom:15px;
+}
+ol.style1 li ul {
+margin-top:15px;
+}
+.drk-mode ol.style1 > li::before {
+color:rgb(80, 103, 197);
+border-color:rgba(57, 60, 155, 0.3);
+}
+/* Custom List Numbering style2*/
+ ol.style2{
+    counter-reset:numbers;
+    list-style:none;
+    padding:0
+}
+ol.style2 > li{
+    counter-increment:numbers;
+    margin-bottom:25px;
+    position:relative;
+    margin-left:55px
+}
+ol.style2 > li img{
+    margin:15px 0;
+    width:100%;
+    display:block
+}
+ol.style2 > li::before{
+    content:counter(numbers);
+    line-height:23px;
+    font-family:'var(--fontB)';
+    font-size:14px;
+    font-weight:bold;
+    left:-45px;
+    width:32px;
+    height:32px;
+    text-align:center;
+    position:absolute;
+    color: #9c27b0;
+    border:5px solid rgb(220 226 224);
+    border-radius:50% 0 50% 50%;
+    top:-2px
+}
+ol.style2 li ul li{
+    margin-bottom:15px
+}
+ol.style2 li ul{
+    margin-top:15px
+}
+.drkMode ol.style2 > li::before{
+    color:rgb(80, 103, 197);
+     border-color:rgba(57, 60, 155, 0.3)
+}
