@@ -1,0 +1,152 @@
+/* Header icons & dark toggle */
+.tDark,
+.headIcn,
+.headIcn > * {
+  font-size: 11px;
+  position: relative;
+}
+
+/* Dark mode tooltip */
+.tDark:before {
+  content: attr(aria-label);
+  opacity: 0;
+  white-space: nowrap;
+  position: absolute;
+  right: 0;
+  transition: var(--trans-1);
+}
+
+.tDark:hover:before {
+  opacity: 0.7;
+  margin: 0 8px;
+  right: 20px;
+}
+
+/* Dark / light icon switch */
+.tDark .svg-02,
+.darkMode .tDark .svg-01 {
+  display: none;
+}
+
+.darkMode .tDark .svg-02 {
+  display: block;
+}
+
+.darkMode .tDark:before {
+  content: 'Light';
+}
+
+/* Language switch */
+.tLang {
+  font-size: 12px;
+}
+
+.tLang li:not(:last-child):after {
+  content: '';
+  display: block;
+  border-left: 1px solid #999;
+  margin: 0 10px;
+  opacity: 0.7;
+  flex: 0 0;
+}
+
+.tLang span,
+.tSocial span {
+  opacity: 0.5;
+}
+
+.tLang a:hover {
+  color: var(--linkC);
+}
+
+.tLang .a:before {
+  content: attr(data-text);
+}
+
+/* Social icons */
+.tSocial li:not(:last-child):after {
+  content: '';
+  display: block;
+  margin: 0 2.5px;
+  flex: 0 0;
+}
+
+.tSocial .a {
+  align-items: center;
+  padding: 2px;
+}
+
+.tSocial svg,
+.tDark svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.tSocial a:hover svg {
+  fill: var(--linkC);
+  opacity: 1;
+}
+
+.tSocial a:hover svg.line {
+  fill: none;
+  stroke: var(--linkC);
+}
+
+/* Search box */
+.BlogSearch.widget form {
+  position: relative;
+}
+
+.BlogSearch.widget input {
+  min-width: 200px;
+  font-size: 13px;
+  padding: 8px 36px;
+  outline: 0;
+  border-radius: 25px;
+  border: var(--srchBo) solid var(--srchBoc);
+  background: var(--srchBg);
+}
+
+.BlogSearch .searchB {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  display: flex;
+  align-items: center;
+}
+
+.BlogSearch .searchB svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--srchI);
+  transition: var(--trans-2);
+}
+
+/* Navigation home */
+.navHome {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navHome svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+/* Tutorial button */
+.tutB {
+  margin-left: 15px;
+}
+
+.tutB .button {
+  margin: 0;
+  font-size: 13px;
+  padding: 8px 15px;
+}
