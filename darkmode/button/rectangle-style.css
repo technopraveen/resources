@@ -6,7 +6,7 @@
   .xdSwch:after, .xdCrnt:before{content:attr(data-light)}
   .xdCrnt{margin:0; font-size:12px;opacity:.7;line-height:17px; display:-webkit-box;overflow:hidden}
   
-  .darkMode .xdDrk{background:var(--darkBsec);box-shadow:0 10px 40px rgba(0,0,0,.2)}
-  .darkMode .xdSwch:after, .darkMode .xdCrnt:before{content:attr(data-dark)}
+  .drK .xdDrk{background:var(--darkBsec);box-shadow:0 10px 40px rgba(0,0,0,.2)}
+  .drK .xdSwch:after, .drK .xdCrnt:before{content:attr(data-dark)}
 
 .headIcn{display:none}
