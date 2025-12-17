@@ -1,0 +1,82 @@
+/* material design box */
+ .technopraveen{
+    background:#fff;
+    position:relative;
+    margin:40px 2px;
+    padding:40px 15px 15px;
+    border:1px solid rgba(230,230,230,1);
+    border-radius:5px;
+    box-shadow:0 10px 20px 0 rgba(30,30,30,.07)
+}
+ .technopraveen h2 {
+    background:#02d07a;
+    border-radius:3px;
+    padding:8px 20px!important;
+    position:absolute;
+    margin:0!important;
+    font-size:17px!important;
+    color:#fff;
+    top:-20px;
+    font-weight:bold;
+    left:30px;
+    text-transform:uppercase
+}
+ .technopraveen.box-yellow h2{
+    background:#e2c601
+}
+ .technopraveen.box-blue h2{
+    background:#2ad2c9
+}
+ .technopraveen.box-red h2{
+    background:#f7176a
+}
+ .technopraveen h3 {
+    background-color:#02d07a;
+    border-radius:3px;
+    padding:8px 20px!important;
+    position:absolute;
+    margin:0!important;
+    font-size:17px!important;
+    color:#fff;
+    top:-20px;
+    font-weight:bold;
+    left:30px;
+    text-transform:uppercase
+}
+ .technopraveen.box-yellow h3{
+    background:#e2c601
+}
+ .technopraveen.box-blue h3{
+    background:#2ad2c9
+}
+ .technopraveen.box-red h3{
+    background:#f7176a
+}
+ .clicker {
+    width:60px;
+    height:60px;
+    margin-left:-30px;
+    margin-top:-30px;
+    background:#204ecf;
+    border-radius:100%;
+    position:absolute;
+    transform:scale(0);
+    opacity:.3;
+    -ms-filter:none;
+    filter:none;
+    z-index:9999;
+    pointer-events:none
+}
+.darkMode .technopraveen{
+    background:#130f40
+}
+.clicker{
+    background:#fff
+}
+.clicker.is-active{
+    opacity:0;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    filter:alpha(opacity=0);
+    transition:opacity 900ms ease,transform 900ms ease;
+    transform:scale(1)
+}
